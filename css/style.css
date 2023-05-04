@@ -65,6 +65,11 @@ li{
 .color-gray{
     color: rgb(174, 174, 174);
 }
+
+.ccc{
+    display: flex;
+    justify-content: flex-end;
+}
 /*fine layout*/
 
 /*main*/

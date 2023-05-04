@@ -6,8 +6,8 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
-
 
 /*layout*/
 main{
@@ -20,6 +20,7 @@ main{
     width: calc(100% - 250px);
     height: 100%;
     background-color: #141922;
+    overflow-y: auto;
 }
 
 .top-bar{
@@ -34,6 +35,19 @@ main{
 a{
     text-decoration: none;
     color: #aeaeae;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.col-16{
+    width: calc(100% / 6 - 20px);
+    margin: 10px;
+}
+
+.col-100{
+    width: 100%;
 }
 
 /*sidebar*/
@@ -63,7 +77,6 @@ a{
 }
 
 .menu-list{
-    height: 30vh;
     overflow-y: auto;
 }
 
@@ -194,17 +207,16 @@ a.btn {
 /*fine top bar*/
 
 /*nav content main*/
-.main-content .main-content-nav {
+.main-content-nav {
     width: 100%;
     margin-top: 90px;
     text-align: center;
   }
-.main-content .main-content-nav a {
-    position: relative;
+.main-content-nav a {
     padding-bottom: 5px;
   }
 
-  .menu-inline li{
+.menu-inline li{
     display: inline-block;
     margin: 10px;
   }
@@ -212,8 +224,29 @@ a.btn {
 /*fine nav content main*/
 
 /*album*/
-
 /*recently*/
+.album .riga-album{
+    margin-top: 10px;
+}
+
+.riga-album{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-cover{
+    width: 100%;
+}
+
+.testo-album{
+    text-align: center;
+}
+
+.testo-album span{
+    color: #aeaeae;
+    font-size: 12px;
+}
 /*fine album*/
 
 /*footer*/

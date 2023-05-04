@@ -80,8 +80,9 @@ a{
     vertical-align: middle;
 }
 
-.menu-list{
+.menu-list-overflow{
     overflow-y: auto;
+    height: 30vh;
 }
 
 .link-nav{

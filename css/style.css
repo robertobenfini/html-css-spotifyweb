@@ -83,6 +83,8 @@ main{
     height: calc(100vh - 100px);
     position: fixed;
     background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nome-playlist{

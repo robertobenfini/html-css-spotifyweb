@@ -116,11 +116,21 @@ main{
 
 .playlist-over{
     overflow-y: auto;
-    height: 170px;
+    height: 200px;
+    padding-top: 10px;
 }
 
-.bottom-nav{
+.img-profile{
+    width: 20px;
+    margin-right: 10px;
+}
 
+.profilo{
+    margin-top: 10px;
+}
+
+.installa{
+    margin-bottom: 10px;
 }
 /*fine side bar*/
 
@@ -157,5 +167,11 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.col-33{
+    width: calc(100% / 3);
+    height: 100px;
+    background-color: blue;
 }
 /*fine footer*/

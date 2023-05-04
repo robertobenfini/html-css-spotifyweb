@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify</title>
     </head>
@@ -14,7 +14,7 @@
             <main class="flex">
                 <!--side bar-->
                 <nav id="side-bar" class="flex">
-                    <div>
+                    <div class="top-nav">
                         <div class="logo-nav">
                             <img src="./img/logo.svg" alt="logo" class="logo">
                         </div>
@@ -70,8 +70,14 @@
                         </div>
                     </div>
                     <div class="bottom-nav">
-                        <div class="color-white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis odio dolorem 
+                        <div>
+                            <div class="color-gray installa">
+                                Installa app
+                            </div>
+                            <hr>
+                            <div class="color-white profilo">
+                                <img src="./img/profile.svg" alt="profile" class="img-profile"><strong>john doe</strong> 
+                            </div>
                         </div>
                     </div>
                 </nav>
@@ -136,7 +142,9 @@
             <footer class="fixed z-index-2">
                 <div class="contenitore">
                     <div class="riga">
-                        <div class="col-100"></div>
+                        <div class="col-33"></div>
+                        <div class="col-33"></div>
+                        <div class="col-33"></div>
                     </div>
                 </div>
             </footer>

@@ -50,6 +50,10 @@ a{
     width: 100%;
 }
 
+
+.border-radius-50{
+    border-radius: 50%;
+}
 /*sidebar*/
 .sidebar{
     width: 250px;
@@ -94,18 +98,11 @@ li{
     padding: 5px 0;
 }
 
-
-.large-icon{
-    font-size: 40px;
-    padding: 5px;
-    background-color: #aeaeae;
-}
-
-
 .large-icon{
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     background-color: #aeaeae;
+    color: #000000;
 }
 
 h4{
@@ -243,10 +240,11 @@ a.btn {
     text-align: center;
 }
 
-.testo-album span{
+.testo-album span ,.riga-album span{
     color: #aeaeae;
     font-size: 12px;
 }
+
 /*fine album*/
 
 /*footer*/

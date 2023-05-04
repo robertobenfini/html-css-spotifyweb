@@ -66,8 +66,6 @@ li{
 .color-gray{
     color: rgb(174, 174, 174);
 }
-
-
 /*fine layout*/
 
 /*main*/
@@ -159,10 +157,7 @@ main{
 footer{
     height: 100px;
     width: 100%;
-    background-color: yellow;
-}
-
-.z-index-2{
+    background-color: #282828;
     z-index: 2;
     bottom: 0;
     left: 0;
@@ -172,6 +167,58 @@ footer{
 .col-33{
     width: calc(100% / 3);
     height: 100px;
-    background-color: blue;
+}
+
+.sinister{
+    width: 50px;
+    margin: 23px 10px;
+}
+
+.album div{
+    margin-top: 35px;
+}
+
+.icone-album{
+    margin-left: 40px;
+    padding-top: 5px;
+}
+
+.fa-heart{
+    padding-right: 10px;
+}
+
+.progress-bar{
+    height: 3px;
+    width: 70%;
+    background-color: white;
+    margin: 8px auto;
+}
+
+.player{
+    margin-top: 30px;
+}
+
+.icone-controller{
+    justify-content: space-evenly;
+}
+
+.icone-controller i{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.mini-progress-bar{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+    margin-top: 5px;
+}
+.icone-footer-right{
+    justify-content: end;
+    margin: 40px 10px 0 0;
+}
+
+.icone-footer-right i{
+    padding: 0 10px;
 }
 /*fine footer*/

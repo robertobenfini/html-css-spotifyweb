@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="./css/style.css">
         <title>Spotify</title>
     </head>
@@ -139,13 +139,49 @@
             </main>
             
             <!--footer-->
-            <footer class="fixed z-index-2">
-                <div class="contenitore">
-                    <div class="riga">
-                        <div class="col-33"></div>
-                        <div class="col-33"></div>
-                        <div class="col-33"></div>
-                    </div>
+            <footer class="fixed">
+                <div class="contenitore-footer">
+                    <div class="riga flex">
+                        <div class="col-33">
+                            <div class="album flex">
+                                <img src="./img/sinister.jpeg" alt="sinister" class="sinister">
+                                <div>
+                                    <h4 class="color-white">Sinister</h4>
+                                    <h6 class="color-gray">Brano nome</h6>
+                                </div>
+                                <div class="icone-album">
+                                    <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                                    <i class="fa-regular fa-folder" style="color: #ffffff;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="controller">
+                                <div class="icone-controller flex">
+                                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
+                                </div>
+                                <div class="flex color-white player">
+                                    0:25
+                                    <div class="progress-bar"></div>
+                                    4:35
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-33">
+                            <div class="footer-right">
+                                <div class="icone-footer-right flex">
+                                    <i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
+                                    <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+                                    <div class="mini-progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </footer>
         </div>

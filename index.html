@@ -1,196 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Spotify</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
     <body>
-        <div id="tutto">
-            <main class="flex">
-                <!--side bar-->
-                <nav id="side-bar" class="flex">
-                    <div class="top-nav">
-                        <div class="logo-nav">
-                            <img src="./img/logo.svg" alt="logo" class="logo">
-                        </div>
-                        <div class="menu-nav">
+        <main>
+            <div class="sidebar">
+                <div class="top-sidebar">
+                    <div class="logo">
+                        <img id="logo-spotify" src="./img/logo.svg" alt="logo">
+                    </div>
+                    <div class="main-menu">
+                        <ul>
+                            <li>
+                                <img class="home" src="./img/home.svg" alt="home">
+                                <a class="link-nav" href="#">Home</a>
+                            </li>
+                            <li>
+                                <img class="home" src="./img/search.svg" alt="search">
+                                <a class="link-nav" href="#">cerca</a>
+                            </li>
+                            <li>
+                                <img class="home" src="./img/libreria.svg" alt="libreria">
+                                <a class="link-nav" href="#">La tua libreria</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="playlist">
+                        <h4>PLAYLIST</h4>
                             <ul>
                                 <li>
-                                    <img src="./img/home.svg" alt="home" class="img-ul">
-                                    <a href="#" class="text-li color-gray">Home</a>
+                                    <i class="fas fa-plus large-icon"></i><a id="playlist" class="link-nav" href="#">Crea Playlist</a>
                                 </li>
-                                <li>
-                                    <img src="./img/search.svg" alt="cerca" class="img-ul">
-                                    <a href="#" class="text-li color-gray">Cerca</a>
+                            </ul>
+                        <div class="menu-list">
+                            <ul>
+                                <li id="plus-space-first-li" class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
                                 </li>
-                                <li>
-                                    <img src="./img/libreria.svg" alt="home" class="img-ul">
-                                    <a href="#" class="text-li color-gray">La tua libreria</a>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
+                                </li>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
+                                </li>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
+                                </li>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
+                                </li>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
+                                </li>
+                                <li class="li-space">
+                                    <a class="link-nav" href="#">Nome Playlist</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="playlist-nav">
-                            <h4 class="h-playlist color-white">PLAYLIST</h4>
-                            <ul>
-                                <li>
-                                    <i class="fa-sharp fa-solid fa-square-plus" style="color: white"></i>
-                                    <a href="#" class="text-li color-white">Crea Playlist</a>
-                                </li>
-                            </ul>
-                            <div class="playlist-over">
-                                <ul>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                    <li class="nome-playlist color-gray">
-                                        Nome playlist
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                    <div class="bottom-nav">
-                        <div>
-                            <div class="color-gray installa">
-                                Installa app
-                            </div>
-                            <hr>
-                            <div class="color-white profilo">
-                                <img src="./img/profile.svg" alt="profile" class="img-profile"><strong>john doe</strong> 
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <!--fine sidebar-->
-                
-                <!--contenuto-->
-                <div id="contenuto-main">
-                    <!--upgrade-->
-                    <div class="upgrade">
-                        <div class="riga">
-                            <div class="col-100 fixed col-upgrade">
-                                <div class="button-upgrade"><button>EFFETTUA L'UPGRADE</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--fine upgrade-->
-                    
-                    <!--nav contenuto-->
-                    <nav class="nav-contenuto">
-                        <div class="riga">
-                            <div class="col-100">
-                                <div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    <!--fine nav contenuto-->
-
-                    <!--recently-->
-                    <div class="recently">
-                        <div class="riga flex wrap">
-                            <div class="col-100"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                        </div>
-                    </div>
-                    <!--fine recently-->
-                    
-                    <!--john doe-->
-                    <div class="john-doe">
-                        <div class="riga flex wrap">
-                            <div class="col-100"></div>
-                            <div class="col-16"></div>
-                            <div class="col-16"></div>
-                        </div>
-                    </div>
-                    <!--fine john doe-->
-                    <div class="artisti">
-                        <div class="riga flex wrap">
-                            <div class="col-100"></div>
-                            <div class="col-16 margin-bottom"></div>
-                            <div class="col-16 margin-bottom"></div>
-                        </div>
-                    </div>
-                    <!--artisti-->
-
-                    <!--fine artisti-->
                 </div>
-                <!--fine contenuto-->
-            </main>
-            
-            <!--footer-->
-            <footer class="fixed">
-                <div class="contenitore-footer">
-                    <div class="riga flex">
-                        <div class="col-33">
-                            <div class="album flex">
-                                <img src="./img/sinister.jpeg" alt="sinister" class="sinister">
-                                <div>
-                                    <h4 class="color-white">Sinister</h4>
-                                    <h6 class="color-gray">Brano nome</h6>
-                                </div>
-                                <div class="icone-album">
-                                    <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
-                                    <i class="fa-regular fa-folder" style="color: #ffffff;"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-33">
-                            <div class="controller">
-                                <div class="icone-controller flex">
-                                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-backward-step" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-play" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-forward-step" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-rotate-right" style="color: #ffffff;"></i>
-                                </div>
-                                <div class="flex color-white player">
-                                    0:25
-                                    <div class="progress-bar"></div>
-                                    4:35
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-33">
-                            <div class="footer-right">
-                                <div class="icone-footer-right flex">
-                                    <i class="fa-solid fa-list-ul" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-desktop" style="color: #ffffff;"></i>
-                                    <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
-                                    <div class="mini-progress-bar"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
+                <div class="bottom-sidebar">
+                    <div class="installa-app">
+                        <a class="mod-link" href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a>
+                    </div>
+                    <div class="user">
+                        <div class="avatar"><img src="img/profile.svg" alt=""></div>
+                        <h2 class="name">John Doe</h2>
+                    </div>
                 </div>
-            </footer>
+            </div>
+            <div class="main-content">
+                <div class="top-bar">
+                    <a href="#" class="btn">Effettua l'upgrade</a>
+                </div>
+                <nav class="main-content-nav">
+                    <ul class="menu-list menu-inline">
+                      <li><a href="#" class="active">IN EVIDENZA</a></li>
+                      <li><a href="#">PODCAST</a></li>
+                      <li><a href="#">CLASSIFICHE</a></li>
+                      <li><a href="#">GENERI E MOOD</a></li>
+                      <li><a href="#">NUOVE USCITE</a></li>
+                      <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                  </nav>
+                <!--album-->
+                <div class="album">
+                    
+                </div>
+            </div>
+        </main>
+        <div class="bottom-bar">
+            <!-- player -->
+            <div id="player">
+                <div class="player-album">
+                    <div class="player-album-cover">
+                    <img src="img/sinister.jpeg" alt="">
+                    </div>
+                    <div class="album-title">
+                    <h2><a href="#">Sinister</a></h2>
+                    <p><a href="#">Brano Nome</a></p>
+                    </div>
+                    <div class="player-icons">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="far fa-folder"></i></a>
+                    </div>
+                </div> 
+                <!--controller-->
+                <div class="player-controller">
+                    <!--icone-->
+                    <div class="player-controller-icons">
+                        <ul class="menu-list-bottom">
+                            <li><i class="fas fa-random"></i></li>
+                            <li><i class="fas fa-step-backward"></i></li>
+                            <li class="player-controller-play-ico"><i class="far fa-play-circle"></i></li>
+                            <li><i class="fas fa-step-forward"></i></li>
+                            <li><i class="fas fa-redo-alt"></i></li>
+                        </ul>
+                    </div>
+                    <!--fine icone-->
+        
+                    <!--time-->
+                    <div class="player-controller-time">
+                        <div class="time-min">0:25</div>
+                        <div class="player-bar">
+                            <div class="controller perc-20">
+                                <div class="controller-point"></div>
+                            </div>
+                        </div>
+                        <div class="time-min">4:35</div>
+                    </div>
+                    <!--time-->
+                </div>
+                <!--fine controller-->
+                <div class="player-audio">
+                    <ul class="menu-list-bottom">
+                        <li><i class="fas fa-list-ul"></i></li>
+                        <li><i class="fas fa-desktop"></i></li>
+                        <li class="audio-volume"><i class="fas fa-volume-up"></i>
+                            <div class="player-bar">
+                                <div class="controller perc-20">
+                                    <div class="controller-point"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--fine player-->
         </div>
-        <!--fine footer-->
     </body>
 </html>

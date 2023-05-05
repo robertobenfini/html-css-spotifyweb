@@ -125,7 +125,7 @@ h4{
 }
 
 .bordo-verde{
-    border-left: 2px solid lightgreen;
+    border-left: 2px solid greenyellow;
 }
 /*fine top sidebar*/
 
@@ -206,6 +206,7 @@ a.btn {
     line-height: 20px;
     color: white;
   }
+
 /*fine top bar*/
 
 /*nav content main*/
@@ -213,16 +214,27 @@ a.btn {
     width: 100%;
     margin-top: 90px;
     text-align: center;
-  }
+}
+
 .main-content-nav a {
     padding-bottom: 5px;
-  }
+}
 
 .menu-inline li{
     display: inline-block;
     margin: 10px;
+}
+
+.hr-verde{
+    color: greenyellow;
   }
-  
+
+a hr{
+    color: transparent;
+    width: 30%;
+    margin: 5px 0 0 38px;
+}
+
 /*fine nav content main*/
 
 /*album*/
@@ -404,3 +416,4 @@ a.btn {
 }
 
 /*fine footer*/
+

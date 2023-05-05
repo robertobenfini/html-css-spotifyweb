@@ -566,5 +566,9 @@ a hr{
     .mod-link img{
         margin-left: 3px;
     }
+
+    .bottom-bar{
+        min-width: 600px;
+    }
 }
 /*fine media query*/

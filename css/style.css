@@ -214,7 +214,7 @@ h4{
     text-align: right;
 }
 
-a.btn {
+.btn{
     display: inline-block;
     padding: 10px 40px;
     border: 1px solid white;
@@ -224,10 +224,14 @@ a.btn {
     color: white;
 }
 
+.btn:hover{
+    padding: 13px 43px;
+    font-size: 15px;
+}
+
 .main-content-nav .menu-inline li a:hover{
     color: white;
 }
-
 /*fine top bar*/
 
 /*nav content main*/
@@ -255,10 +259,34 @@ a hr{
     width: 30%;
     margin: 3px 0 0 38px;
 }
-
 /*fine nav content main*/
 
 /*album*/
+.contenitore-album{
+    position: relative;
+}
+.hover-album{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 65px;
+    display: none;
+}
+
+.hover-album i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contenitore-album:hover .hover-album{
+    display: block;
+}
+
 /*recently*/
 .album .riga-album{
     margin-top: 10px;
@@ -297,8 +325,8 @@ a hr{
     position: fixed;
     bottom: 0;
 }
-/*section player*/
 
+/*section player*/
 #player {
     display: flex;
     justify-content: space-between;
@@ -348,12 +376,22 @@ a hr{
 
 .album-title p a{
     text-decoration: none;
-    color: #aeaeae;
+    color: white;
+    opacity: 0.7;
+}
+
+.album-title p a:hover{
+    opacity: 1;
 }
 
 .player-icons i{
     margin-left: 10px;
     color: #fff;
+    opacity: 0.7;
+}
+
+.player-icons i:hover{
+    opacity: 1;
 }
 /*fine section player*/
 
@@ -414,15 +452,33 @@ a hr{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.controller {
+.controller{
     position: relative;
     height: 100%;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.controller.perc-20 {
+.controller.perc-20{
     width: 20%;
+}
+
+.controller.perc-20:hover{
+    background-color: greenyellow;
+}
+
+.controller-point{
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: -115%;
+    display: none;
+}
+
+.player-bar:hover .controller-point{
+    display: block;
 }
 /*fine section controller*/
 
@@ -439,7 +495,6 @@ a hr{
     align-items: center;
     justify-content: space-between;
 }
-
 /*fine footer*/
 
 /*media query*/

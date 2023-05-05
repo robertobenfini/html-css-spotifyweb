@@ -83,9 +83,10 @@ a{
     display: none;
 }
 
-.home{
+.img-sidebar{
     width: 30px;
     vertical-align: middle;
+    opacity: 0.7;
 }
 
 .menu-list-overflow{
@@ -100,6 +101,10 @@ a{
     vertical-align: middle;
     font-weight: 300;
     font-size: 12px;
+}
+
+.link-nav:hover{
+    opacity: 1;
 }
 
 li{
@@ -130,6 +135,10 @@ h4{
 
 .bordo-verde{
     border-left: 2px solid greenyellow;
+}
+
+.bordo-verde .img-sidebar ,.bordo-verde .link-nav{
+    opacity: 1;
 }
 /*fine top sidebar*/
 
@@ -187,6 +196,10 @@ h4{
 .user{
     padding: 10px 0;
 }
+
+.text-installa:hover{
+    color: white;
+}
 /*fine bottom sidebar*/
 /*fine sidebar*/
 
@@ -209,7 +222,11 @@ a.btn {
     font-size: 12px;
     line-height: 20px;
     color: white;
-  }
+}
+
+.main-content-nav .menu-inline li a:hover{
+    color: white;
+}
 
 /*fine top bar*/
 

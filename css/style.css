@@ -79,6 +79,10 @@ a{
     padding: 10px 0;
 }
 
+#logo-small{
+    display: none;
+}
+
 .home{
     width: 30px;
     vertical-align: middle;
@@ -187,10 +191,10 @@ h4{
 /*fine sidebar*/
 
 /*top bar*/
-main .main-content .top-bar{
+.top-bar{
     position: fixed;
     z-index: 1;
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
     height: 90px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -232,7 +236,7 @@ a.btn {
 a hr{
     color: transparent;
     width: 30%;
-    margin: 5px 0 0 38px;
+    margin: 3px 0 0 38px;
 }
 
 /*fine nav content main*/
@@ -241,6 +245,7 @@ a hr{
 /*recently*/
 .album .riga-album{
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .riga-album{
@@ -262,6 +267,9 @@ a hr{
     font-size: 12px;
 }
 
+.col-100{
+    margin: 0 0 30px 10px;
+}
 /*fine album*/
 
 /*footer*/
@@ -417,3 +425,74 @@ a hr{
 
 /*fine footer*/
 
+/*media query*/
+/*desktop*/
+@media screen and (max-width: 1024px) {
+    .col-16{
+        width: calc(100% / 4 - 20px);
+        flex-wrap: wrap;
+    }
+}
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+    .col-16{
+        width: calc(100% / 2 - 20px);
+        flex-wrap: wrap;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+    .sidebar{
+        width: 50px;
+        padding-left: 5px;
+    }
+
+    #logo-spotify{
+        display: none;
+    }
+
+    #logo-small{
+        display: block;
+        width: 20px;
+        margin: 5px 0 0 10px;
+    }
+
+    .bordo-verde{
+        border: none;
+    }
+
+    .top-bar{
+        width: calc(100% - 50px);
+    }
+
+    .main-content{
+        width: calc(100% - 50px);
+    }
+
+    .top-sidebar a{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .mod-link span{
+        display: none;
+    }
+
+    .user h2{
+        display: none;
+    }
+
+    .installa-app{
+        border: none;
+    }
+
+    .mod-link img{
+        margin-left: 3px;
+    }
+}
+/*fine media query*/
